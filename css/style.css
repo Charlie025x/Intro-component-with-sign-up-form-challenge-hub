@@ -11,6 +11,58 @@ body {
   font-family: 'Bebas Neue', cursive;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  background-color: var(--clr-red);
+  background-image: url(../images/bg-intro-mobile.png);
+}
+
+.lead {
+  margin-top: 6rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.lead h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.lead p {
+  margin-bottom: 2rem;
+}
+
+.button {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form {
+  padding: 1rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.form input {
+  margin-bottom: 1rem;
+}
+
+.form p {
+  text-align: center;
+  color: var(--clr-grayishblue);
+}
+
+.form p span {
+  color: var(--clr-red);
+  font-weight: 700;
 }
 
 .attribution {
