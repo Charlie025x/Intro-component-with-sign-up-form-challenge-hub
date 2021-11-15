@@ -19,10 +19,14 @@ body {
   background-image: url(../images/bg-intro-mobile.png);
   margin-left: 1rem;
   margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .lead {
   margin-top:6rem;
+  max-width: 40rem;
   // margin-left: 1rem;
   // margin-right: 1rem;
   color: white;
@@ -40,6 +44,7 @@ body {
 .button {
   // display: flex;
   width: 100%;
+  // max-width: 40rem;
   margin-bottom: calc(1rem + 8px);
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -63,6 +68,10 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
   }
+}
+
+.button-form-container {
+  max-width: 40rem;
 }
 
 .form {
@@ -95,4 +104,53 @@ body {
   a {
     color: hsl(228, 45%, 44%);
   }
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    background-image: url(../images/bg-intro-desktop.png);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 1.7rem;
+  }
+  
+  .lead {
+    margin: 0;
+    margin-right: 1rem;
+    width: 49%;
+    max-width: 50rem;
+    // width: 60rem;
+    text-align: start;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  .button {
+    font-size: inherit;
+  }
+
+  .button-form-container {
+    width: 49%;
+    max-width: 60rem;
+    input {
+      font-size: inherit;
+    }
+    footer p {
+      font-size: inherit;
+    }
+  }
+
+  .form {
+    height: 40rem;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  
 }
