@@ -13,12 +13,12 @@ body {
   font-size: 16px;
   background-color: var(--clr-red);
   background-image: url(../images/bg-intro-mobile.png);
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .lead {
   margin-top: 6rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
   color: white;
   text-align: center;
 }
@@ -35,11 +35,39 @@ body {
 
 .button {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: calc(1rem + 8px);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.button-blue {
+  background-color: var(--clr-blue);
+  -webkit-box-shadow: rgba(28, 18, 73, 0.274) 0px 8px;
+          box-shadow: rgba(28, 18, 73, 0.274) 0px 8px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.button-blue span {
+  font-weight: 700;
+}
+
+.button-green {
+  background-color: var(--clr-green);
+  -webkit-box-shadow: #36af46 0px 5px;
+          box-shadow: #36af46 0px 5px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .form {
   padding: 1rem;
+  margin-bottom: 3rem;
+  border-radius: 10px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,11 +76,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 3rem;
+  -webkit-box-shadow: rgba(28, 18, 73, 0.274) 0px 8px;
+          box-shadow: rgba(28, 18, 73, 0.274) 0px 8px;
 }
 
 .form input {
   margin-bottom: 1rem;
+  border: 1px solid var(--clr-grayishblue);
+  border-radius: 5px;
+  padding: 1rem;
+  font-weight: 700;
 }
 
 .form p {
