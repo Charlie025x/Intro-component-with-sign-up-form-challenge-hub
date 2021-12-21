@@ -144,7 +144,6 @@ body {
     height: 100vh;
     margin-left: 10vw;
     margin-right: 10vw;
-    font-size: 1.7rem;
   }
   .lead {
     margin: 0;
@@ -170,7 +169,6 @@ body {
     font-size: inherit;
   }
   .form {
-    height: 40rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
