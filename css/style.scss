@@ -82,7 +82,16 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: rgba(28, 18, 73, 0.274) 0px 8px;
+  // .input-container[data-error] input {
+  //   border-color: var(--clr-red);
+  //   color: var(--clr-red);
+  // }
+  // .input-container[data-error]::after {
+  //   content: attr(data-error);
+  //   color: var(--clr-red);
+  // }
   input {
+    width: calc( 100% - 2rem);
     margin-bottom: 1rem;
     border: 1px solid var(--clr-grayishblue);
     border-radius: 5px;
@@ -106,7 +115,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1024px) {
   body {
     background-image: url(../images/bg-intro-desktop.png);
     display: flex;
